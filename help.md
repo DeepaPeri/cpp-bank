@@ -6,6 +6,10 @@
 	* g++ -o <output-file> <source-file>
 	* -std=c++0x: Enables C++11
 	* -Wall : Enable warnings.	
+
+*	http://www.techytalk.info/c-cplusplus-library-programming-on-linux-part-one-static-libraries/
+*	http://northstar-www.dartmouth.edu/doc/solaris-forte/manuals/c++/user_guide/Rev.html
+	
 # General
 * C language standards:
 	* ANSI C from late 1980
