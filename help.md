@@ -6,6 +6,7 @@
 	* Shift + O: Insert a new line above the current line in vim
 	* o: Insert a new line after the current line in vim
 	* ctrl + w and up/down arrow: To switch between multiple files in the split tab.
+	* ctrl + z : temporary exit to command prompt. Use the command fg to exit shell (fg: foreground)
 # Compiler:
 	* gcc: GNU compiler collection
 	* gcc abc.c -o xyz: xyz will be exe file in windows
