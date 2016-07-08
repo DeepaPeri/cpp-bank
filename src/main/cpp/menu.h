@@ -3,10 +3,11 @@
 
 class Menu{
 private:
-	std::string* options;
+	char options[][25];
+	int numberOfOptions;
 public:
 	//Supply the options that this menu is supposed to render.
-	Menu(std::string* options);
+	Menu(char& options[][25], int numberOfOptions);
 	
 	//Display the menu to user and return the selected option.
 	int getUserChoice();

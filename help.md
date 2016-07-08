@@ -1,3 +1,11 @@
+# Linux and Vim commands
+	* :tabe <filepath>: Open this file in another tab in vim
+	* :sp <filepath>: Split the current tab into two parts with this file as the second one in vim
+	* :tabn : Switch to next tab in vim
+	* :tabp : Switch to previous tab in vim
+	* Shift + O: Insert a new line above the current line in vim
+	* o: Insert a new line after the current line in vim
+	* ctrl + w and up/down arrow: To switch between multiple files in the split tab.
 # Compiler:
 	* gcc: GNU compiler collection
 	* gcc abc.c -o xyz: xyz will be exe file in windows
