@@ -1,7 +1,11 @@
 #include "menu.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
 
 int main(){
-	char options[][20] = {"Cut", "Copy", "Paste", "Delete"};
+	string options[4] = {"Cut", "Copy", "Paste", "Delete"};
 	Menu m (options, 4);
 
 	int c = m.getUserChoice();

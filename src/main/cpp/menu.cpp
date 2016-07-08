@@ -1,9 +1,10 @@
 #include "menu.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-Menu::Menu(char& options [][25], int numberOfOptions){
+Menu::Menu(string* options, int numberOfOptions){
 	this -> options = options;
 	this -> numberOfOptions = numberOfOptions;
 }

@@ -21,8 +21,8 @@ clean:
 
 
 test: all test-compile
-	./build/menuTest
+	build/test/menuTest.exe
 
 test-compile:
-	g++ -Isrc/main/cpp src/test/cpp/menuTest.cpp -o build/test/menuTest.exe
+	g++ -Isrc/main/cpp src/test/cpp/menuTest.cpp -o build/test/menuTest.exe build/menu.o
 

@@ -1,13 +1,15 @@
 #ifndef MENU
 #define MENU
 
+#include <string>
+
 class Menu{
 private:
-	char options[][25];
+	std::string* options;
 	int numberOfOptions;
 public:
 	//Supply the options that this menu is supposed to render.
-	Menu(char& options[][25], int numberOfOptions);
+	Menu(std::string* options, int numberOfOptions);
 	
 	//Display the menu to user and return the selected option.
 	int getUserChoice();
