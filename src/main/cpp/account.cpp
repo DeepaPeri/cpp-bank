@@ -14,7 +14,6 @@ Account::Account(long accountNumber, double balance, string name){
 	this -> balance = balance ;
 	this -> name = name;                             
 }
-
 //Deposit the given amount, which should be more than 0.
 void Account::deposit(double amount){
 	if(amount <= 0){
@@ -49,7 +48,6 @@ double Account::getBalance(){
 string Account::getName(){
 	return name;
 }
-
 //Print account details.
 void Account::display(){
 	cout << "[Account number: " << accountNumber << ", Name: " << name << ", Balance: " << balance << " ]" << endl;

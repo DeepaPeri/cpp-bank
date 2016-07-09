@@ -1,7 +1,10 @@
 all: clean init bank test
 
-bank: menu account main
-	g++ -o build/bank.exe build/main.o build/account.o build/menu.o
+bank: menu account accountList main
+	g++ -o build/bank.exe build/main.o build/account.o build/menu.o build/accountList.o
+
+accountList: 
+	g++ -c src/main/cpp/accountList.cpp -o build/accountList.o
 
 account: 
 	g++ -c src/main/cpp/account.cpp -o build/account.o

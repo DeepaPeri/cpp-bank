@@ -14,6 +14,7 @@ private:
 	double balance;
 	std::string name;
 public:	
+	Account(){}
 	Account(long accountNumber, double balance, std::string name);
 	//Deposit the given amount, which should be more than 0.
 	void deposit(double amount);
