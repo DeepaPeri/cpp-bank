@@ -10,5 +10,5 @@ int main(){
 
 	int c = m.getUserChoice();
 
-	cout << "User choice is : " << c;
+	cout << "menuTest::" << "User choice is : " << c << endl;
 }

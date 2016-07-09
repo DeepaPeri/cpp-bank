@@ -1,15 +1,15 @@
-all: clean init bank.exe
+all: clean init bank test
 
-bank.exe: build/menu.o build/main.o build/account.o
-	g++ -o build/bank.exe build/main.o build/account.o
+bank: menu account main
+	g++ -o build/bank.exe build/main.o build/account.o build/menu.o
 
-build/account.o: src/main/cpp/account.cpp
+account: 
 	g++ -c src/main/cpp/account.cpp -o build/account.o
 
-build/main.o: src/main/cpp/main.cpp
+main: 
 	g++ -c src/main/cpp/main.cpp -o build/main.o
 
-build/menu.o: src/main/cpp/menu.cpp
+menu: 
 	g++ -c src/main/cpp/menu.cpp -o build/menu.o
 
 init: 
@@ -20,7 +20,7 @@ clean:
 	rm -rf build
 
 
-test: all test-compile
+test: test-compile
 	build/test/menuTest.exe
 
 test-compile:

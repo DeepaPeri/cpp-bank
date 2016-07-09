@@ -28,7 +28,7 @@ int Menu::getUserChoice(){
 		return getUserChoice();	
 	}
 	
-	cout << "Your choice is: " << options[choice - 1];
+	cout << "Menu: " << "Your choice is: " << options[choice - 1] << endl;
 
 	return choice;
 }
