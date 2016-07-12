@@ -3,6 +3,7 @@
 * @author: Sai Deepa Bhavani
 * @date: 03-07-2016
 */
+
 #include<iostream>
 #include<string>
 #include "account.h"
@@ -51,4 +52,8 @@ string Account::getName(){
 //Print account details.
 void Account::display(){
 	cout << "[Account number: " << accountNumber << ", Name: " << name << ", Balance: " << balance << " ]" << endl;
+}
+//get account number
+long getAccountNumber(){
+	return accountNumber;
 }

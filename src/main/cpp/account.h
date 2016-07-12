@@ -1,4 +1,4 @@
-/**
+i/**
 * This class represents an account object held by a customer.
 * @author: Sai Deepa Bhavani
 * @date: 03-07-2016
@@ -30,5 +30,8 @@ public:
 
 	//Print account details.
 	void display();
+	`
+	//Get account number
+	long getAccountNUmber();
 };
 #endif
